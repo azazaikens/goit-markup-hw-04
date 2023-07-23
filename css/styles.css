@@ -190,13 +190,15 @@ img {
     flex-direction: column;
     align-items: center;
 
-    /* max-width: 1440px; */
     padding: 188px 0;
     background-color: var(--blue-black-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-header {
@@ -464,12 +466,17 @@ img {
     border: 1px solid transparent;
     color: var(--white-color);
     background-color: var(--blue-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .portfolio-but:focus {
     border: 1px solid transparent;
     color: var(--white-color);
     background-color: var(--blue-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-photo-list {
@@ -481,12 +488,23 @@ img {
     row-gap: 48px;
 }
 
-.portfolio-photo-li {
+/* .portfolio-photo-li {
 
-}
+} */
 
-.linc-photo {
+.link-photo {
+    display: block;
     text-decoration: none;
+}
+.link-photo:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.link-photo:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name-and-category {
