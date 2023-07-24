@@ -29,15 +29,15 @@
           >
           <ul class="ul-logo list">
             <li class="header-navigation">
-              <a href="./index.html" class="linc-navigation link">Studio</a>
+              <a href="./index.html" id="current-page" class="link-navigation link-active link">Studio</a>
             </li>
             <li class="header-navigation">
-              <a href="./portfolio.html" class="linc-navigation link"
+              <a href="./portfolio.html" class="link-navigation link"
                 >Portfolio</a
               >
             </li>
             <li class="header-navigation">
-              <a href="" class="linc-navigation link">Contacts</a>
+              <a href="" class="link-navigation link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -46,12 +46,12 @@
             <li class="address-li">
               <a
                 href="mailto:info@devstudio.com"
-                class="linc-navigation-addr link"
+                class="link-navigation-addr link"
                 >info@devstudio.com</a
               >
             </li>
             <li class="address-li">
-              <a href="tel:+110001111111" class="linc-navigation-addr link"
+              <a href="tel:+110001111111" class="link-navigation-addr link"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -63,7 +63,7 @@
       <section class="index-section-one">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
-          <button class="main-but" type="button">Order Service</button>
+          <button class="main-but" type="button"  data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="future section">
@@ -404,5 +404,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="icon-wrapper-modal-close" data-modal-close>
+          <svg class="modal-close-window">
+            <use href="/images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
